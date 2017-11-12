@@ -49,7 +49,7 @@ header {
    	border-style: solid;
     text-align: justify;
     padding: 10px 20px 10px 25px;
-    margin-bottom: 200px
+    margin-bottom: 20px
 }
 
 #right-content{
@@ -216,6 +216,7 @@ input::-webkit-input-placeholder {
   margin: 20px;
 }
 
+
 /* Rotates project in portfolio on hover. Just to make little fancier*/
 .box:hover {
   transform: rotate(-10deg);
@@ -229,14 +230,15 @@ input::-webkit-input-placeholder {
 }
 
   footer {
+            clear: both;
             width: 100%;
             height: 100px;
             top: auto;
         	  right: 0;
         	  bottom: 0;
         	  left: 0;
-            position: fixed;         
-            text-align: center;
+/*            position: fixed;         
+*/            text-align: center;
             font-size: 1.6em;
             border-radius: 10px;
             background-color: pink;
@@ -247,3 +249,125 @@ input::-webkit-input-placeholder {
   color: #ffffff;
   font-weight: bolder;
 }
+
+
+
+/*browser size*/
+@media screen and (max-width: 980px){
+  #header-container {
+    width: 100%;
+    display: block;
+  }
+  #content{
+    width: 100%;;
+  }
+  #right-content{
+    width: 230px;
+    float: left;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  #head-logo{
+    background-color: salmon;
+    font: #efefef;
+    border-left: 10px solid crimson;
+    width: 350px;
+  }
+  p{
+    clear: both;
+  }
+  
+}
+/*tablet size*/
+@media screen and (max-width: 768px) {
+  #content{
+    width: 95%;
+  }
+  #right-content{
+    margin-bottom: auto;
+    width: 95%px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  #head-logo{
+    background-color: antiquewhite;
+    border-left: 10px solid lightblue;
+    width: 45%;
+
+  }
+  header-container, {
+    width: 100%;
+    justify-content: normal;
+    display: inline-block;
+  }
+  aside{
+    float: left;
+    width: 100%;
+  }
+  p{
+    clear: none;
+  }
+  footer {
+    position: fixed;
+  }
+}
+/*landscape phone size*/
+@media screen and (max-width: 640px){
+
+.main-body {
+    margin-left: 10px;
+    width: 578%;
+}
+
+#header-container, {
+   position: fixed;
+    height: auto;
+    width: 100%;
+    z-index: 100
+  }
+
+
+.box {
+  width: 95%;
+  height: 95%;
+}
+  #content{
+    width: 578px;
+  }
+  #head-logo{
+    width: 578px;
+    text-align: center;
+  }
+
+  #right-content{
+    width: 578px;
+    margin-left: 0px;
+    margin-bottom: -20px;
+  }
+
+  #cont2{
+    width: 100%;
+  }
+  nav{
+    clear: both;
+    float: none;
+    text-align: center;
+    padding: 15px 0 15px 0;
+  }
+  a{
+    width: 32%;
+    text-align: center;
+  }
+
+ 
+  header{
+    width: 578px;
+  }
+  #footer {
+    position: fixed;
+    display: block;
+  }
+  
+}
+
+
